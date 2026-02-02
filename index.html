@@ -31,9 +31,16 @@
   #yes {
     background-color: #ff4d6d;
     color: white;
+    box-shadow: 0 0 20px #ff4d6d, 0 0 40px #ff4d6d, 0 0 60px #ff4d6d;
+    animation: pulse 1.5s infinite;
   }
   #no {
     background-color: #ccc;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 20px #ff4d6d, 0 0 40px #ff4d6d, 0 0 60px #ff4d6d; transform: scale(1); }
+    50% { box-shadow: 0 0 30px #ff99aa, 0 0 50px #ff99aa, 0 0 70px #ff99aa; transform: scale(1.1); }
+    100% { box-shadow: 0 0 20px #ff4d6d, 0 0 40px #ff4d6d, 0 0 60px #ff4d6d; transform: scale(1); }
   }
   .heart {
     position: absolute;
@@ -49,7 +56,7 @@
 </head>
 <body>
 
-<h1>Will you be my Valentine? 💖</h1>
+<h1>Will you be my Valentine, Muskan Pandey? 💖</h1>
 <button id="yes">Yes</button>
 <button id="no">No</button>
 
